@@ -7,6 +7,14 @@ Squid proxy on Docker
 ```
 git clone https://github.com/thr3a/squid-docker-compose.git
 cd squid-docker-compose
+cp .env.sample .env
+
+# input your hostname and email
+vim .env
+
+# change default username and password
+vim Dockerfile
+
 docker-compose up
 
 # confirm
